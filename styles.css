@@ -274,6 +274,11 @@ body {
     display: none !important;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #222;
+  }
+}
 
 /* Desktop Styles */
 @media (min-width: 768px) {
