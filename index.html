@@ -7,24 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="mobile-container">
-        <!-- Tempo Display -->
+    <div class="fixed-app-container">
         <div class="tempo-display">
             <span id="tempo">120</span>
             <span class="bpm">BPM</span>
         </div>
-        
-        <!-- Slider goes first now -->
         <div class="floating-controls">
             <div class="tempo-slider-container">
                 <input type="range" id="tempo-slider" min="40" max="208" value="120" class="tempo-slider">
             </div>
         </div>
-        
-        <!-- Start Button Image Overlay goes last, at the bottom -->
         <img src="start-button.png" id="start-img-btn" class="start-img-btn" alt="Start" />
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html> 

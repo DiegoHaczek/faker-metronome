@@ -6,14 +6,23 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('faser.jpeg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     min-height: 100vh;
-    color: white;
+    min-width: 100vw;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixed-app-container {
+    position: relative;
+    width: 439px;
+    height: 550px;
+    background: url('faser.jpeg') no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 4px 32px #0002;
     overflow: hidden;
+    border-radius: 16px;
 }
 
 .mobile-container {
@@ -29,9 +38,14 @@ body {
 
 /* Tempo Display - Top of screen */
 .tempo-display {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
     text-align: center;
-    padding-top: 40px;
-    z-index: 10;
+    color: #fff;
+    text-shadow: 0 2px 8px #000a;
+    z-index: 2;
 }
 
 #tempo {
@@ -51,23 +65,22 @@ body {
 
 /* Floating Controls - Center */
 .floating-controls {
+    position: absolute;
+    left: 0;
     width: 100%;
+    top: 220px;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
-    margin-bottom: auto;
-    z-index: 10;
 }
 
 /* Tempo Slider */
 .tempo-slider-container {
-    width: 100%;
-    max-width: 350px;
-    padding: 20px 0 0 0;
-    background: none;
+    width: 90%;
+    background: rgba(0,0,0,0.3);
     border-radius: 25px;
-    border: none;
+    padding: 10px 0;
 }
 
 .tempo-slider {
@@ -220,14 +233,14 @@ body {
 .start-img-btn {
     position: absolute;
     left: 50%;
-    bottom: 40px;
+    bottom: 18px;
     transform: translateX(-50%);
     width: 220px;
     height: auto;
     cursor: pointer;
-    z-index: 20;
-    transition: filter 0.2s, box-shadow 0.2s;
+    z-index: 2;
     user-select: none;
+    transition: filter 0.2s, box-shadow 0.2s;
 }
 
 .start-img-btn:active,
