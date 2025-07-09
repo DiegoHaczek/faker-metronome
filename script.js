@@ -173,7 +173,15 @@ class Metronome {
             // Other beats
             if (this.lowTone) this.lowTone();
         }
-        
+
+        // Animación de sombra al ritmo
+        if (this.startImgBtn) {
+            this.startImgBtn.classList.add('beat-shadow');
+            setTimeout(() => {
+                this.startImgBtn.classList.remove('beat-shadow');
+            }, 120); // Duración breve y sutil
+        }
+
         this.beatCount++;
     }
     
