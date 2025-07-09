@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,11 +16,10 @@ body {
 
 .fixed-app-container {
     position: relative;
-    width: 439px;
-    height: 550px;
+    width: 512px;
+    height: 773px;
     background: url('faser.jpeg') no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 4px 32px #0002;
+    background-size: contain;
     overflow: hidden;
     border-radius: 16px;
 }
@@ -68,7 +67,7 @@ body {
     position: absolute;
     left: 0;
     width: 100%;
-    top: 220px;
+    top: 320px;
     z-index: 2;
     display: flex;
     flex-direction: column;
