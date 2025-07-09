@@ -1,3 +1,4 @@
-# Metrónomo Web
+# Web Metronome
 
-Una aplicación web estática de metrónomo con una interfaz moderna y elegante, inspirada en el artista musical El Faker.
+A static web application metronome with a modern and sleek interface, inspired by the musical artist El Faker.
+
